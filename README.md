@@ -8,7 +8,7 @@ This repo demonstrates how to test a [Flask](https://flask.palletsprojects.com/e
 
 When we launch a Flask application, the web client interacts with the server, which is made up of three main subsystems:
 
-![Flask App in Production](https://i.ibb.co/23ZNtFm/fa33193f0447.png)
+![Flask App in Production](https://i.ibb.co/bLF631r/288709187bca.png)
 
 The following steps occur whenever there is a request from a client:
 
@@ -22,7 +22,7 @@ The following steps occur whenever there is a request from a client:
 
 When we want to test a Flask application, we only need to test the **User Code** (It is the job of the Flask community to test the **Flask Routing System** and the **Flask Web Server**).  To do this, we replace the **Flask Web Server** with a **Flask Test Client**:
 
-![Flask App in Testing](https://i.ibb.co/vJbLGNq/a9ded23ff285.png)
+![Flask App in Testing](https://i.ibb.co/bX0G23v/8dc09aebf5ec.png)
 
 * The **Pytest Test** puts the Flask app into testing mode and creates the **Flask Test Client**.  Using this client, the **Pytest Test** calls the `.get()` method for the endpoint we want to test.
 * The **Flask Test Client** creates a Request object and passes it to the **Flask Routing System**.
